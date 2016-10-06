@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>it.ismb.pertlab</groupId>
+	  <artifactId>it.ismb.pertlab.pwal</artifactId>
+	  <relativePath>../pom.xml</relativePath>
+    <version>${pwal.version}</version>
+  </parent>
+	<groupId>it.ismb.pert.pwal</groupId>
+	<artifactId>events.format</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>events.format</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<organization>
+		<name>Istituto Superiore Mario Boella</name>
+		<url>http://www.ismb.it</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>dbonino</id>
+			<name>Dario Bonino</name>
+			<email>dario.bonino@gmail.com</email>
+			<url>https://www.linkedin.com/in/dariobonino</url>
+			<organization>Istituto Superiore Mario Boella</organization>
+			<organizationUrl>http://www.ismb.it</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>Europe/Rome</timezone>
+			<properties>
+				<picUrl>https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/000/001/392/3d1b92c.jpg</picUrl>
+			</properties>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>it.ismb.pertlab</groupId>
+			<artifactId>pwal-api</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>it.ismb.pertlab</groupId>
+			<artifactId>ogc.sensorthings.model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jscience</groupId>
+			<artifactId>jscience</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,9 @@
+The sandmark.util.Options class parses command-line options according to
+the Unix standard (POSIX .2 section 2.10.2) utility syntax guidelines.
+
+While the end-user sees behavior consistent with the C getopt()
+function, the programming interface is completely different.
+@author Gregg Townsend, University of Arizona
+@version February, 2001
+@since <i>Included since 20/11/2003</i>
+ 
